@@ -3,8 +3,8 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        echo C('URL_MODEL');
-        echo U('Index/user',array('id'=>1),'html',true);
+        echo C('URL_MODEL').'<br>';
+        echo U('Index/user',array('id'=>1),'html',true,'localhost');
     }
     public function user(){
         echo 'id is:'.$_GET['id'].'<br>';
